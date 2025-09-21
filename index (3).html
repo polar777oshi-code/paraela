@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Para Minha Amada Triz 🌷</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ffb6c1 0%, #ffe4e1 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      color: #d6336c;
+    }
+    .card {
+      background: rgba(255,255,255,0.8);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(220, 38, 76, 0.18);
+      padding: 40px 30px;
+      max-width: 600px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      color: #ff69b4;
+    }
+    .media-row {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+    .video-container {
+      width: 320px;
+      max-width: 100%;
+    }
+    .video-container video, .video-container iframe {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(220,38,76,0.08);
+    }
+    .image-container img {
+      width: 220px;
+      max-width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(220,38,76,0.10);
+    }
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 14px;
+    }
+    .heart {
+      font-size: 2.5rem;
+      animation: pulse 1.2s infinite;
+      margin-bottom: 12px;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1);}
+      50% { transform: scale(1.2);}
+      100% { transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">💞</div>
+    <h1>Para Minha Amada</h1>
+    <div class="media-row">
+      <div class="video-container">
+        <!-- Se for arquivo local, coloque o vídeo na pasta public e troque o src -->
+        <!-- <video src="video.mp4" controls poster="poster.jpg"></video> -->
+
+        <!-- Se for YouTube, use iframe: -->
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="image-container">
+        <img src="imagem.jpg" alt="Foto especial">
+      </div>
+    </div>
+    <p>Você é a razão do meu sorriso todos os dias.</p>
+    <p> oque sinto por você palavras não podem expressar</p>
+    <p>🌹</p>
+  </div>
+</body>
+</html>
